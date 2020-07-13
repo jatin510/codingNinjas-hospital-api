@@ -44,7 +44,7 @@ module.exports.createReport = async (req, res) => {
 
       // TODO
       let data = {
-        doctor: doctor.name,
+        doctor: req.body.doctor,
         patient: req.params.id,
         status: req.body.status,
         date: req.body.date,
